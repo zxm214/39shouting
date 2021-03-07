@@ -75,7 +75,7 @@ jobs:
       if: steps.use-npm-cache.outputs.cache-hit != 'true' || steps.use-npm-depends.outputs.cache-hit != 'true'
       run: npm install
        
-    # 运行 52pojie 签到任务
+    # 运行 52pojie 签任务
     - name: Run 52pojie daily task
       if: ${{ env.ENABLE_52POJIE }}
       env:
